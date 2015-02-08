@@ -11,8 +11,8 @@ namespace CodingLessons
 {
     public static class Snippets
     {
-        //public static string stringOfConnection = Pwds.webConString;
-        public static string stringOfConnection = Pwds.localConString;
+        public static string stringOfConnection = Pwds.webConString;
+        //public static string stringOfConnection = Pwds.localConString;
         public static void CheckAdmin(IPrincipal User, HttpServerUtility Server)
         {
             if (User.IsInRole("admin"))
