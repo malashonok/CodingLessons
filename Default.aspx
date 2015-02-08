@@ -1,12 +1,6 @@
 ﻿<%@ Page Title="Startseite" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="CodingLessons._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h1>
-        TODO: Succes/Fail message on ending of exercise. Configure Site.Mobile.Master.
-    </h1>
-    <h1>
-        New Functions: Adding/removing tasks/solutions.
-    </h1>
     <asp:Panel runat="server" ID="adminView" Visible="false">
         <div class="megatron">
             <h1>
