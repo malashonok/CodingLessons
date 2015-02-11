@@ -26,16 +26,6 @@ namespace CodingLessons
             Snippets.CheckLevelData(_levelData, Server);
         }
 
-        protected void Page_PreRender(object sender, EventArgs e)
-        {
-            if (!this.IsPostBack)
-            {
-                success.Visible = false;
-                failure.Visible = false;
-
-                solution.Visible = true;
-            }
-        }
         protected void solutionPlaceHolder_Load(object sender, EventArgs e)
         {
             var parts = new List<CodePart>();
@@ -143,15 +133,11 @@ namespace CodingLessons
                         command.ExecuteNonQuery();
                         conn.Close();
 
-                        //congratulate
-                        success.Visible = true;
-
-                        solution.Visible = false;
-                        failure.Visible = false;
+                        Server.Transfer("~/Description.aspx");
                     }
                     else
                     {
-                        failure.Visible = true;
+                        Congratulate(false);
                     }
             }
         }
@@ -159,7 +145,7 @@ namespace CodingLessons
         /// <summary>
         /// Checks the second string to be equal to the first while ignoring all spaces, tabulators and line breaks.
         /// </summary>
-        /// <param name="solution">The right string.</param>
+        /// <param name="solution">The correct string.</param>
         /// <param name="toCheck">The string to be checked.</param>
         /// <returns></returns>
         protected bool Check(string solution, string toCheck)
@@ -179,6 +165,12 @@ namespace CodingLessons
             toCheck  = toCheck .Replace("\n", String.Empty);
 
             return toCheck == solution;
+        }
+
+        protected void Congratulate(bool passed)
+        {
+            Snippets.alert(passed ? "Glückwunsch! Sie haben diese Aufgabe bestanden."
+                                  : "Das war nicht richtig. Bitte überprüfe noch einmal deine Antwort.");
         }
     }
 }

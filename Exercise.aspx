@@ -2,16 +2,6 @@
 
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <asp:Panel ID="success" Visble="false" runat="server">
-        <h1> Well Done !!!!</h1>
-        <asp:LinkButton runat="server" PostBackUrl="~/Description.aspx" Text="next level" />
-    </asp:Panel>
-
-    <asp:Panel ID="failure" Visible="false" runat="server">
-        <h1> That was wrong.....</h1>
-    </asp:Panel>
-
     <asp:Panel ID="solution" Visible="true" runat="server">
 
         <h2><%: _levelData["descriptionHeader"] %>.</h2>
