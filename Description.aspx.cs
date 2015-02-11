@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace CodingLessons
@@ -26,14 +27,12 @@ namespace CodingLessons
             Snippets.CheckLevelData(_levelData, Server);
 
             _levelData = formatData();
-        }
 
-        protected void exampleBox_Load(object sender, EventArgs e)
-        {
             //print example
-            exampleBox.Text = _levelData["example"].ToString();
-            exampleBox.Rows = Snippets.countLines(_levelData["example"].ToString());
-            exampleBox.Columns = Snippets.getMaxWidth(_levelData["example"].ToString());
+            var code = new HtmlGenericControl("pre");
+            code.InnerText = _levelData["example"].ToString();
+            code.Attributes.Add("class", "prettyprint lang-cs linenums");
+            given.Controls.Add(code);
         }
 
         DataRow formatData()

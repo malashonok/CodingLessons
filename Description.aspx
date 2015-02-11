@@ -5,14 +5,7 @@
     <p>
         <%= _levelData["description"] %>
     </p>
-    <asp:TextBox
-        BorderStyle="None"
-        ID="exampleBox"
-        OnLoad="exampleBox_Load"
-        runat="server"
-        ReadOnly="True"
-        TextMode="MultiLine"
-    />
+    <asp:PlaceHolder runat="server" ID="given" />
     <br />
     <asp:Button
         ID="submitBtn"

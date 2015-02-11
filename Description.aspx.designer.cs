@@ -13,13 +13,13 @@ namespace CodingLessons {
     public partial class Description {
         
         /// <summary>
-        /// exampleBox-Steuerelement
+        /// given-Steuerelement
         /// </summary>
         /// <remarks>
         /// Automatisch generiertes Feld
         /// Um dies zu ändern, verschieben Sie die Felddeklaration aus der Designerdatei in eine Code-Behind-Datei.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox exampleBox;
+        protected global::System.Web.UI.WebControls.PlaceHolder given;
         
         /// <summary>
         /// submitBtn-Steuerelement
