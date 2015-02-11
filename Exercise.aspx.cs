@@ -68,9 +68,7 @@ namespace CodingLessons
                     {
                         newBox.Text = @"//Hier bitte ihren Code";
 
-                        newBox.BackColor = System.Drawing.Color.LightGray;
-
-                        //newBox.Attributes.Add("onkeydown", "EnterToTab()");
+                        newBox.BackColor = System.Drawing.Color.FromArgb(0xb3, 0xb3, 0xb3);
 
                         //save box
                         part.box = newBox;

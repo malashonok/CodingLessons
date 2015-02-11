@@ -19,7 +19,7 @@
             <%= _levelData["task"] %>
         </p>
         
-        <asp:Panel runat="server" ID="solutionPanel" BackColor="WhiteSmoke">
+        <asp:Panel runat="server" ID="solutionPanel" BackColor="#d5d5d5">
             <asp:PlaceHolder
                 ID="solutionPlaceHolder"
                 OnLoad="solutionPlaceHolder_Load"
@@ -39,13 +39,5 @@
         />
 
     </asp:Panel>
-
-<script type="text/javascript">
-    /*function EnterToTab() {
-        //if (event.keyCode==13)
-        //    event.keyCode=9;
-        alert("thing went ok");
-    }*/
-</script>
 
 </asp:Content>
