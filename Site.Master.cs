@@ -73,7 +73,7 @@ namespace CodingLessons
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Page.Title.StartsWith("Admin:"))
-                Body.Attributes.Add("bgcolor", "#ffff00");
+                Body.Attributes.Add("bgcolor", "#dddd00");
 
             if (Context.User.Identity.IsAuthenticated)
             {
