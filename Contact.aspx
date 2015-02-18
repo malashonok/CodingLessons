@@ -10,5 +10,5 @@
     <asp:TextBox runat="server" ID="email" TextMode="Email" Columns="40" /> <br />
     <h4>Ihre Nachricht:</h4>
     <asp:TextBox runat="server" ID="message" TextMode="MultiLine" Rows="10" Columns="40" /> <br />
-    <asp:Button runat="server" ID="submit" Text="Absenden" />
+    <asp:Button runat="server" ID="submit" Text="Absenden" OnClick="Send" />
 </asp:Content>
