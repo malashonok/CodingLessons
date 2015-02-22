@@ -171,6 +171,8 @@
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\lvl1Description.png" />
+    <Content Include="Content\images\lvl1Exercise.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Description.aspx" />
     <Content Include="Exercise.aspx" />
