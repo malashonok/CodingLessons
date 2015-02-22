@@ -6,13 +6,14 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Security.Principal;
 using System.Web;
+using System.Web.UI;
 
 namespace CodingLessons
 {
     public static class Snippets
     {
-        //public static string stringOfConnection = Pwds.webConString;
-        public static string stringOfConnection = Pwds.localConString;
+        public static string stringOfConnection = Pwds.webConString;
+        //public static string stringOfConnection = Pwds.localConString;
 
         public static void CheckAdmin(IPrincipal User, HttpServerUtility Server)
         {
@@ -158,6 +159,17 @@ namespace CodingLessons
                 return String.Empty;
 
             return solutionRow["solution"].ToString();
+        }
+
+        public static void checkSql(string input)
+        {
+            if (input.Contains("'"))
+            {
+                alert(String.Format("Aus Sicherheitsgründen wurde Ihre Eingabe \"{0}\" blockiert." +
+                                    "Bitte achten Sie darauf keine Apostroph(')-Zeichen zu verwenden.", input));
+
+                throw new Exception("Security violation");
+            }
         }
     }
 }

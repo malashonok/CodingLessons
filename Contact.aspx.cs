@@ -17,6 +17,10 @@ namespace CodingLessons
 
         protected void Send(object sender, EventArgs e)
         {
+            Snippets.checkSql(topic.Text);
+            Snippets.checkSql(message.Text);
+            Snippets.checkSql(email.Text);
+
             var conn = new SqlConnection(Snippets.stringOfConnection);
             var cmd = conn.CreateCommand();
 
