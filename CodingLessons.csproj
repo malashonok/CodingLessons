@@ -163,6 +163,7 @@
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="admin\CMS.aspx" />
     <Content Include="admin\Edit.aspx" />
+    <Content Include="admin\MMS.aspx" />
     <Content Include="App_Data\aspnet-CodingLessons-20141101122520.mdf" />
     <Content Include="App_Data\aspnet-CodingLessons-20141101122520_log.ldf">
       <DependentUpon>aspnet-CodingLessons-20141101122520.mdf</DependentUpon>
@@ -349,6 +350,13 @@
     </Compile>
     <Compile Include="admin\Edit.aspx.designer.cs">
       <DependentUpon>Edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\MMS.aspx.cs">
+      <DependentUpon>MMS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\MMS.aspx.designer.cs">
+      <DependentUpon>MMS.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

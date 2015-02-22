@@ -9,8 +9,15 @@
             <ul>
                 <li>
                     <p>
-                        <a href="admin/CMS.aspx">
+                        <a href="admin/CMS">
                             Content Management System
+                        </a>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a href="admin/MMS">
+                            Mail Management System
                         </a>
                     </p>
                 </li>
